@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#gameContainer {
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 1px 1px 80px skyblue;
+  border: pink 200px groove;
+  margin: 30px auto;
+  height: 390px;
+  width: 350px;
+}
+
+#game {
+  background-color: silver;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: white 1px inset;
+  height: 190px;
+  width: 150px;
+  position: relative;
+  top: -95px;
+  left: -75px;
+}
+
+#infoBar {
+  background-color: silver;
+  display: flex;
+  justify-content: space-between;
+  border: inset 1px white;
+  height: 30px;
+  width: 93.5%;
+  margin: 5px;
+}
+
+#bombCounter, #timer {
+  width: 28%;
+  margin-top: 3px;
+  background-color: red;
+  text-align: center;
+}
+
+#faceButton {
+  width: 30px;
+  height: 100%;
+  background-color: plum;
+  font-size: 10px;
+  text-align: center;
+}
+/* 
+#timer {
+  width: 28%;
+  margin-top: 3px;
+  background-color: red;
+} */
+
+#gameGrid {
+  display:flex;
+  width:93.5%;
+  height: 150px;
+  margin: 5px;
+  border: white 1px inset;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-spacing: 1px 1px;
+  width: 17.1px;
+  height: 17.1px;
+  border: white 1px outset;
+  color: black;
+  background-color: darkgray;
+}
+
+.cell:focus{
+  outline: none;
+}
+
+.cell::selection{
+  color:none;
+  background: none;
+}
+
+.bomb {
+  color: pink;
+}
+
+#notClicked {
+  background-color: silver;
+  color: silver;
+}
+
+#clicked {
+
+}
+
+#heldDown {
+  border: white 1px solid;
+}
+
+#flag {
+  background-color: darkgreen;
+  color: darkgreen;
+
+}
